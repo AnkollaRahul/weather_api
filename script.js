@@ -4,7 +4,7 @@ const cityInput = document.getElementById('cityInput');
 const weatherContent = document.getElementById('weatherContent');
 
 function getWeatherData(city) {
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // Use metric units for temperature
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   fetch(apiUrl)
     .then(response => response.json())
@@ -41,6 +41,6 @@ searchButton.addEventListener('click', () => {
   const city = cityInput.value.trim();
   if (city) {
     getWeatherData(city);
-    cityInput.value = ''; // Clear input field after search
+    cityInput.value = '';
   }
 });
