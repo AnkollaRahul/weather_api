@@ -4,20 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<header>
+   <div class="container1">
+      <h1>Weather App | <h3>Fetches real-time Weather Data using OpenWeatherMap API</h3></h1>
+   </div>
+</header>
+
+<section> 
   <div class="container">
-    <header class="header">
-      <h1>Weather App</h1>
-      <input type="text" id="cityInput" placeholder="Enter City Name">
-      <button id="searchButton">Search</button>
-    </header>
-    <div id="weatherContent" class="weather-content">
-      </div>
+    <input type="text" id="searchInput" placeholder="Enter city name">
+    <button id="searchButton">Search</button>
+    <div id="weatherInfo" class="weather-info"></div>
+    <div id="forecast" class="forecast"></div>
+    <canvas id="weatherChart" width="400" height="200"></canvas>
   </div>
   <script src="script.js"></script>
+</section>
 
 </body>
 </html>
