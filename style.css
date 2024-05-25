@@ -1,86 +1,57 @@
-.container
-{
-  max-width: 600px;
-  margin: 50px auto;
-  text-align: center;
+/* Add margin to the weather info */
+.weather-info {
+    text-align: center;
+    margin-top: 20px;
 }
 
-#searchInput
-{
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
+.weather-info h2 {
+    font-size: 2em;
+    margin: 10px 0;
 }
 
-#searchButton
-{
-  padding: 10px 20px;
-  background-color: #2596be;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.weather-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
-.weather-info
-{
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f8f9fa;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#weather-icon {
+    font-size: 4em;
+    margin: 10px 0;
 }
 
-.weather-info p
-{
-  margin: 5px 0;
+.sun-info {
+    margin-top: 20px;
 }
 
-.weather-info i
-{
-  margin-right: 5px;
+.sun-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.forecast
-{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+.sun-info i {
+    margin-right: 10px;
 }
 
-.forecast-day
-{
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f8f9fa;
+.daily-report, .five-day-forecast {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.forecast-day p
-{
-  margin: 5px 0;
+.daily-report h4, .five-day-forecast h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
-.container1 {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
+.daily-report ul, .five-day-forecast ul {
+    padding: 0;
 }
 
-header {
-    background-color: #2E2E2E;
-    color: #fff;
-    padding: 20px 0;
+.daily-report li, .five-day-forecast li {
+    list-style: none;
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-header h1 {
-    margin: 0;
-}
-
-h1, h3
-{
-  display: inline;
-  margin: 0;
+.daily-report i, .five-day-forecast i {
+    margin-right: 10px;
 }
